@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "#non-wildcard": "./src/non-wildcard.js",
+    "#non-wildcard_doesnt-exist": "./src/non-wildcard_doesnt-exist.js",
+    "#wildcard/*": "./src/wildcard/parent/*.js",
+    "#wildcard_doesnt-exist/*": "./src/wildcard/*.js"
+  }
+}
