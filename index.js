@@ -23,10 +23,7 @@ function resolve(source, file) {
 
   const importKeys = Object.keys(imports)
     .filter(key => key.includes('*'))
-    .map(key => {
-      const keyStart = key.slice(0, key.indexOf('*'))
-      return [key, keyStart]
-    })
+    .map(key => [key, key.slice(0, -1)])
     .filter(([, keyStart]) => source.startsWith(keyStart))
 
   for (const [key, keyStart] of importKeys) {
