@@ -1,6 +1,6 @@
 {
   "name": "eslint-import-resolver-pjson-imports",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Accounts for package.json 'imports'",
   "main": "index.js",
   "keywords": [],
